@@ -1,6 +1,10 @@
 name: Push Image
 
-on: [tag]
+#on: [push]
+on:
+  push:
+    tags:        
+      - '*'  
 
 jobs:
   build:
