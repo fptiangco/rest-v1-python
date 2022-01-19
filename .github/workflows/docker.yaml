@@ -1,6 +1,6 @@
 name: Push Image
 
-on: [push]
+on: [tag]
 
 jobs:
   build:
