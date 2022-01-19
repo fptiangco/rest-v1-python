@@ -15,7 +15,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build
       run: |
-        docker build . -t ${{secrets.DOCKER_USER}}/rest_v1_python:1
+        docker build . -t ${{secrets.DOCKER_USER}}/rest_v1_python:${{github.ref_name}}
     - name: docker push
       run: |
-        docker push ${{secrets.DOCKER_USER}}/rest_v1_python:1
+        docker push ${{secrets.DOCKER_USER}}/rest_v1_python:${{github.ref_name}}
