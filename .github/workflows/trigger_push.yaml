@@ -5,6 +5,6 @@ on:
 jobs:
   # 1. Test + CodeCoverage
   test-codecov:
-    uses: fptiangco/githubactions-test/.github/workflows/wf_test_codecov.yml@main
+    uses: fptiangco/rest-v1-python/.github/workflows/wf_test_codecov.yml@main
     secrets:
        codecovtoken: ${{ secrets.CODECOV_TOKEN }}
