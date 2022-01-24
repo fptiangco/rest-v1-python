@@ -14,7 +14,7 @@ jobs:
   # 2. Build + Push
   docker-build-push:
     needs: test-codecov
-    uses: fptiangco/githubactions-test/.github/workflows/wf_build_push.yml@main
+    uses: fptiangco/rest-v1-python/.github/workflows/wf_build_push.yml@main
     with:
       image_name: ${{github.event.repository.name}}
       tag: ${{github.ref_name}}
