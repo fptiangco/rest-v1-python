@@ -7,14 +7,14 @@ on:
 jobs:
   # 1. Test + CodeCoverage
   test-codecov:
-    uses: fptiangco/github-actions-workflows/test_codecov.yml@main
+    uses: fptiangco/github-actions-workflows/.github/workflows/test_codecov.yml@main
     secrets:
        codecovtoken: ${{ secrets.CODECOV_TOKEN }}
 
   # 2. Build + Push
   docker-build-push:
     needs: test-codecov
-    uses: fptiangco/github-actions-workflows/build_push.yml@main
+    uses: fptiangco/github-actions-workflows/.github/workflows/build_push.yml@main
     with:
       image_name: ${{github.event.repository.name}}
       tag: ${{github.ref_name}}
