@@ -1,0 +1,23 @@
+name: Tag
+
+on:
+  push:
+    tags:        
+      - '*'
+jobs:
+  # 1. Test + CodeCoverage
+  test-codecov:
+    uses: fptiangco/rest-v1-python/.github/workflows/wf_test_codecov.yml@main
+    secrets:
+       codecovtoken: ${{ secrets.CODECOV_TOKEN }}
+
+  # 2. Build + Push
+  docker-build-push:
+    needs: test-codecov
+    uses: fptiangco/githubactions-test/.github/workflows/wf_build_push.yml@main
+    with:
+      image_name: ${{github.event.repository.name}}
+      tag: ${{github.ref_name}}
+    secrets:
+      registry_username: ${{secrets.DOCKER_USER}}
+      registry_password: ${{secrets.DOCKER_PASSWORD}}
