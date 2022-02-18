@@ -6,5 +6,5 @@ def v1():
     return "v1"
 
 @app.route("/err")
-def v1():
+def err():
     return "err"
