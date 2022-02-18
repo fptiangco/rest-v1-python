@@ -2,5 +2,4 @@
 
 [![Push](https://github.com/fptiangco/rest-v1-python/actions/workflows/trigger_push.yaml/badge.svg)](https://github.com/fptiangco/rest-v1-python/actions/workflows/trigger_push.yaml)
 
-
-
+* hub auto build
