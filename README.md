@@ -2,4 +2,5 @@
 
 [![Push](https://github.com/fptiangco/rest-v1-python/actions/workflows/trigger_push.yaml/badge.svg)](https://github.com/fptiangco/rest-v1-python/actions/workflows/trigger_push.yaml)
 
-* hub auto build
+[![Docker](https://img.shields.io/docker/cloud/build/fptiangco/rest-v1-python?label=Docker&style=flat)](https://hub.docker.com/r/fptiangco/rest-v1-python/builds)
+
