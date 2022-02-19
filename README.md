@@ -9,7 +9,7 @@ pip install -r src/requirements.txt
 # Test and Coverage
 pytest --cov
 # Run
-export FLASK_APP=src/server.py; flask run -h 0.0.0.0 -p 8080
+export FLASK_APP=src/server.py; flask run -h 0.0.0.0 -p 5000
 ```
 Docker
 ```
