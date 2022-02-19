@@ -5,6 +5,3 @@ app = Flask(__name__)
 def v1():
     return "v1"
 
-@app.route("/err")
-def err():
-    return "err"
