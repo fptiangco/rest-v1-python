@@ -15,6 +15,8 @@ Docker
 ```
 # Build
 docker build . -t rest-v1-python
+# Image Scan
+docker scan rest-v1-python
 # Test
 docker run rest-v1-python pytest --cov
 # Run
