@@ -6,19 +6,27 @@ Local/Virtualenv:
 ```
 # Install
 pip install -r src/requirements.txt
-# Test and Coverage
+
+# Python package scan
+safety check
+# Test and coverage
 pytest --cov
-# Run
+
+# Run on localhost:5000
 export FLASK_APP=src/server.py; flask run -h 0.0.0.0 -p 5000
 ```
 Docker
 ```
 # Build
 docker build . -t rest-v1-python
-# Image Scan
+
+# Image scan
 docker scan rest-v1-python
-# Test
+# Python package scan
+docker run rest-v1-python safety check
+# Test and coverage
 docker run rest-v1-python pytest --cov
-# Run
+
+# Run on localhost:5000
 docker run -p 5000:5000 rest-v1-python
 ```
