@@ -15,7 +15,7 @@ pytest --cov
 # Run on localhost:5000
 export FLASK_APP=src/server.py; flask run -h 0.0.0.0 -p 5000
 ```
-###### Docker
+##### Docker
 ```
 # Build
 docker build . -t rest-v1-python
