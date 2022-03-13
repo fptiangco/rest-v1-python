@@ -3,3 +3,4 @@ pytest==7.1.0
 pytest-cov==3.0.0
 coverage==6.3.2
 safety==1.10.3
+black==22.1.0

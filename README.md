@@ -2,7 +2,8 @@
 |---|---|
 | Tests | [![codecov](https://codecov.io/gh/fptiangco/rest-v1-python/branch/main/graph/badge.svg?token=3BXDA33460)](https://codecov.io/gh/fptiangco/rest-v1-python) [![Push](https://github.com/fptiangco/rest-v1-python/actions/workflows/trigger_push.yaml/badge.svg)](https://github.com/fptiangco/rest-v1-python/actions/workflows/trigger_push.yaml) |
 | Docker | [![Docker](https://img.shields.io/docker/cloud/build/fptiangco/rest-v1-python?label=Docker&style=flat)](https://hub.docker.com/r/fptiangco/rest-v1-python/builds) ![Docker Pulls](https://img.shields.io/docker/pulls/fptiangco/rest-v1-python) ![Docker Image Version (latest semver)](https://img.shields.io/docker/v/fptiangco/rest-v1-python?sort=semver) |
-| QA | [![Updates](https://pyup.io/repos/github/fptiangco/rest-v1-python/shield.svg)](https://pyup.io/repos/github/fptiangco/rest-v1-python/)|
+| Code | <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a> |
+| Scans | [![Updates](https://pyup.io/repos/github/fptiangco/rest-v1-python/shield.svg)](https://pyup.io/repos/github/fptiangco/rest-v1-python/)|
 
 ### Quickstart
 * A utility service that returns 'v1'
