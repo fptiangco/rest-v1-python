@@ -22,4 +22,4 @@ COPY ./src/ ${WORKDIR}
 ENV FLASK_APP=server.py
 RUN chown -R ${DOCKER_UNAME}:${DOCKER_UNAME} ${WORKDIR}
 USER ${DOCKER_UNAME}
-CMD flask run -h 0.0.0 -p 5000
+CMD flask run -h 0.0.0.0 -p 5000
